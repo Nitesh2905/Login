@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Cairo", sans-serif;
+}
+
+body{
+    background: #4568DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.logo{
+    position: relative;
+    left:1.5rem;
+}
+.logo h1{
+    transform: translateY(30%);
+}
+.svg ion-icon{
+    position: relative;
+    left:0.2rem;
+    bottom: -0.85rem;
+   
+    height: 80px;
+    width: 80px;
+    color: #f3f0ed;
+    
+}
+.share-text{
+    position: relative;
+    left: -4rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    background: -webkit-linear-gradient(rgb(57, 211, 231), rgb(83, 233, 196));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+main{
+    display: flex;
+    align-items: center;
+    margin: 5rem;
+    height: 100%;
+}
+.illustration{
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+}
+.box {
+    width: 300px;
+    height: 70vh;
+    padding: 5px;
+    position: absolute;
+    right:11rem;
+    text-align: center;
+    top: 3rem;
+   
+  }
+  /* .illustration{
+      position: relative;
+      left: 1rem;
+  } */
+
+  .box h1{
+      text-transform: uppercase;
+  }
+
+  .box input[type="text"],
+  .box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 1.5rem auto;
+    text-align: center;
+    border-bottom: 2px solid #3498db;
+    padding: 0.6rem 0.8rem;
+    width: 200px;
+    outline: none;
+    color: rgb(253, 253, 253);
+    border-radius: 3px;
+    transition: 0.35s;
+  }
+
+  ::placeholder{
+      color:#000;
+  }
+  .box input[type="text"]:focus,
+      .box input[type="password"]:focus {
+        transform: scale(1.15);
+        border-color: #2ecc71;
+
+      }
+.wrong{
+    color: rgb(255, 0, 0);
+    position: relative;
+    font-weight: 550;
+    left: 2rem;
+    bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+  .label{
+      display: flex;
+  }
+  ion-icon {
+     padding: 2px;
+    margin: auto;
+    position: relative;
+    left: 5rem;
+    opacity: 0.6;
+  }
+
+  .log{
+      display: flex;
+      flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+    left: 1.5rem;
+  }
+
+  .btn{
+    border: 0;
+    background: none;
+    /* margin: 20px auto; */
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 0.6rem 2.5rem;
+    /* width: 100px; */
+    outline: none;
+    color: black;
+    border-radius: 25px;
+    transition: 0.25s;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .btn:hover{
+    background: #2ecc71;
+    color: #fff;
+  }
+
+  .log a{
+    text-decoration: none;
+    color: #111010;
+    transform: translateY(30%);
+  }
+  .log a:hover{
+    color: #eec9c9;
+  }
+
+  .social{
+      position: relative;
+      left: 1.5rem;  
+  }
+ 
+.media{
+    position: absolute;
+    left: 1rem;
+    margin-top:0.5rem ;
+    cursor: pointer;
+
+}
+.media a{
+    text-decoration: none;
+    color: #000;
+    opacity: .9;
+    margin: 0 0.4rem;
+}
+
+.media a:hover{
+    opacity: 1;
+    color: rgb(247, 243, 243);
+    
+}
+.media a ion-icon:hover{
+    transform: scale(1.5);
+    transition: 0.8s;
+}
+
+
+@media only screen and (max-width: 768px){
+    .box{
+        position: absolute;
+        right:4rem;
+    }
+    .illustration{
+        
+        position: absolute;
+        right:15rem;
+        top: 5rem;
+    }
+    .share-text{
+        position: relative;
+        left: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+ 
+    .box{
+        position: absolute;
+        left: 1rem;
+        margin: 0 auto;
+    }
+    .illustration{
+        
+       display: none;
+    }
+}
