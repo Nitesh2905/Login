@@ -207,7 +207,7 @@ main{
  
     .box{
         position: absolute;
-        left: -1rem;
+/*         left: -1rem; */
         margin: 0 auto;
     }
     .illustration{
